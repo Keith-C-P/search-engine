@@ -23,20 +23,23 @@ to compile the application, then run: \
   </a>
 </summary>
 
-To regenerate the 'data.txt' file run:\
-`python3 -m venv .venv`
+Feel free to change the code in `main.py` to adjust **DEPTH** and **SOURCE_SITE**
 
-Then run either of these to activate the venv:\
-Linux - `source .venv/bin/activate`\
-Windows - `.venv\bin\activate.bat`
+Linux:
+```
+python3 -m venv .venv           # ╮
+source .venv/bin/activate       # ├ venv creation  
+pip install -r requirements.txt # ╯
+python3 main.py                 # ├ regenerating the data
+```
+Windows:
+```
+python3 -m venv .venv           # ╮
+.venv\bin\activate.sh           # ├ venv creation  
+pip install -r requirements.txt # ╯
+python3 main.py                 # ├ regenerating the data
+```
 
-Then run this to install dependencies:\
-`pip install -r requirements.txt`
-
-Lastly run this to generate the 'data.txt'\:\
-`python3 main.py`
-
-Feel free to change the code in main.py to adjust **DEPTH** and **SOURCE_SITE**
 
 > Run this to stop the venv\
 > ```deactivate```
